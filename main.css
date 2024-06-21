@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #004d40;
+    padding: 1em;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nav-link {
+    margin-right: 1em;
+}
+.nav-link:hover {
+    color: #ffcc80;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Header Styles */
+.header {
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.description h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.description button {
+    border: 1px solid #ffcc80;
+    background: #ffcc80;
+    color: #004d40;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+.description button:hover {
+    background: #004d40;
+    color: #ffcc80;
+}
+
+/* Features Section */
+.features {
+    background: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+.feature-title {
+    color: #004d40;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.features img {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+.features .btn {
+    background-color: #004d40;
+    border: none;
+    color: #fff;
+    padding: 0.5em 2em;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+.features .btn:hover {
+    background-color: #00332e;
+}
+
+/* Team Section */
+.background {
+    background: #e0f2f1;
+    padding: 4em 0;
+}
+.team {
+    color: #004d40;
+    padding: 0 2em;
+    text-align: center;
+}
+.team .card-columns {
+    column-count: 4;
+    column-gap: 1em;
+}
+.team .card {
+    background: none;
+    border: none;
+    margin-bottom: 1em;
+}
+.team .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Footer Section */
+.page-footer {
+    background-color: #004d40;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+}
+.footer-copyright {
+    color: #ccc;
+    padding: 1em 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 575.98px) {
+    .description {
+        padding: 0 1em;
+        top: 40%;
+        transform: translate(-50%, -40%);
+    }
+    .description h1 {
+        font-size: 2rem;
+    }
+    .description p {
+        font-size: 1rem;
+    }
+    .features {
+        padding: 2em 1em;
+    }
+}
+
+/* Modal Styles */
+#demo-modal .modal-content {
+    border-radius: 0;
+    padding: 2rem;
+}
+#demo-modal .modal-header {
+    border-bottom: none;
+}
+#demo-modal h4 {
+    color: #004d40;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#demo-modal .close {
+    background: #c0c3c8;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#demo-modal .close span {
+    position: relative;
+    top: -3px;
+}
+#demo-modal .modal-body p {
+    color: #666;
+}
+#demo-modal .form-control,
+#demo-modal .btn {
+    min-height: 46px;
+}
+#demo-modal .btn {
+    background-color: #004d40;
+    border: none;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    transition: background 0.3s;
+}
+#demo-modal .btn:hover {
+    background-color: #00332e;
+}
+#logo {
+    max-width: 200px;
+}
